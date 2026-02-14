@@ -1,0 +1,70 @@
+{
+    "name": "iperamuna/filament-chunk-upload",
+    "version": "1.0.0",
+    "description": "Chunked File Upload implementation for Filament 5 Forms",
+    "keywords": [
+        "laravel",
+        "filament",
+        "filament-chunk-upload",
+        "filepond",
+        "chunk-upload"
+    ],
+    "homepage": "https://github.com/iperamuna/filament-chunk-upload",
+    "support": {
+        "issues": "https://github.com/iperamuna/filament-chunk-upload/issues",
+        "source": "https://github.com/iperamuna/filament-chunk-upload"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Indunil Peramuna",
+            "email": "iperamuna@gmail.com",
+            "homepage": "https://iperamuna.online",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^12.0",
+        "filament/filament": "^5.0",
+        "spatie/laravel-package-tools": "^1.15.0",
+        "rahulhaque/laravel-filepond": "^1.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.14",
+        "orchestra/testbench": "^10.0",
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Iperamuna\\FilamentChunkUpload\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Iperamuna\\FilamentChunkUpload\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Iperamuna\\FilamentChunkUpload\\FilamentChunkUploadServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
