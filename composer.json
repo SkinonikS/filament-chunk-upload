@@ -28,7 +28,7 @@
         "illuminate/support": "^13.0",
         "filament/filament": "^5.0",
         "spatie/laravel-package-tools": "^1.15.0",
-        "rahulhaque/laravel-filepond": "^1.0"
+        "rahulhaque/laravel-filepond": "^13.0"
     },
     "require-dev": {
         "laravel/pint": "^1.14",
